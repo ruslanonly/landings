@@ -1,0 +1,28 @@
+{
+  "name": "findtrend",
+  "version": "1.0.0",
+  "description": "findtrend landing page development",
+  "main": "index.html",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded src/scss/index.scss:src/css/index.css",
+    "sass-prod": "sass --no-source-map --style=compressed src/scss:src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslanonly/pet-findtrend-landingpage.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "findtrend"
+  ],
+  "author": "ruslanonly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruslanonly/pet-findtrend-landingpage/issues"
+  },
+  "homepage": "https://github.com/ruslanonly/pet-findtrend-landingpage#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}

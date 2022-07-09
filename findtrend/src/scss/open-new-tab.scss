@@ -1,0 +1,190 @@
+@use "./variables" as v;
+
+#open-new-tab-section {
+    & {
+        background-color: v.$volt-green;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper {
+        & {
+            max-width: 800px;
+            display: grid;
+            row-gap: 5rem;
+            justify-items: center;
+            height: min-content;
+            grid-template-rows: min-content 1fr min-content;
+            font-size: 1rem;
+        }
+
+        h2 {
+            white-space: normal;
+            text-align: center;
+            font-size: 4.5em;
+            font-weight: 900;
+        }
+
+        .card-wrapper {
+            & {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 1rem;
+                width: 100%;
+                height: 30vh;
+            }
+
+            .card {
+                & {
+                    background-color: black;
+                    padding: 2em 3em;
+                    position: relative;
+                }
+                .content {
+                    & {
+                        display: grid;
+                        grid-auto-flow: column;
+                        column-gap: 1rem;
+                        align-items: center;
+                    }
+                    .socnet {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                    span {
+                        color: white;
+                        font-size: 1.5em;
+                    }
+                }
+
+                .right {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 3rem;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 2rem;
+                    background-image: linear-gradient(90deg, rgba(24,24,24,0) 0%, rgba(24,24,24,0.5158438375350141) 17%, rgba(24,24,24,1) 41%);
+                }
+                .cross {
+                    & {
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                    &:before, &:after {
+                        position: absolute;
+                        content: ' ';
+                        height: 1.2rem;
+                        width: 2px;
+                        background-color: white;
+                        }
+                    &:before {
+                    transform: rotate(45deg);
+                    }
+                    &:after {
+                    transform: rotate(-45deg);
+                    }
+                }
+            }
+
+            .arrow-title1{
+                & {
+                    position: absolute;
+                    left: -25%;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .title {
+                    font-family: 'Kalam', cursive;
+                    font-weight: 900;
+                    white-space: normal;
+                    width: 7rem;
+                    transform: rotate(5deg);
+                }
+                .arrow {
+                    margin-left: 3rem;
+                    margin-bottom: .5rem;
+                    width: 5rem;
+                    height: 1rem;
+                    background: url("../../dist/img/lefttoright.svg") no-repeat center;
+                }
+            }
+
+            .arrow-title2{
+                & {
+                    position: absolute;
+                    right: -25%;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .title {
+                    font-family: 'Kalam', cursive;
+                    font-weight: 900;
+                    white-space: normal;
+                    width: 7rem;
+                    transform: rotate(5deg);
+                }
+                .arrow {
+                    margin-top: .5rem;
+                    width: 5rem;
+                    height: 1rem;
+                    background: url("../../dist/img/toptoleft.svg") no-repeat center;
+                }
+            }
+        }
+        h3 {
+            white-space: normal;
+            text-align: center;
+            line-height: 2rem;
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #open-new-tab-section {
+        .wrapper {
+            .card-wrapper {
+                & {
+                    height: 20vh;
+                }
+                .arrow-title1, .arrow-title2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 850px) {
+    #open-new-tab-section {
+        .wrapper {
+            & {
+                font-size: .7rem;
+                padding: 0 1.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .card-wrapper {
+                & {
+                    padding: 2rem;
+                }
+
+                .card {
+                    width: 100%;
+                    padding: 1em;
+                }
+            }
+        }
+    }
+}
+

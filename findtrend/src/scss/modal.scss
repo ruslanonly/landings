@@ -1,0 +1,51 @@
+#modal-nav {
+    & {
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 50;
+        height: 100vh;
+        width: 100vw;
+        top: -100%;
+        position: fixed;
+        font-weight: bold;
+    }
+    .content-wrapper {
+        & {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80%;
+            width: 100%;
+            background-color: black;
+        }
+        nav {
+            display: grid;
+            grid-auto-flow: row;
+            justify-items: center;
+            row-gap: 3rem;
+            margin-bottom: 3rem;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .buttons-wrapper {
+            display: grid;
+            align-items: center;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 2rem;
+            .button {
+                color: white;
+                text-align: center;
+                &.active {
+                    color: black;
+                    padding: 1rem 2rem;
+                    background-color: white;
+                    border-radius: 3rem;
+                }
+            }
+        }
+    }    
+    
+}

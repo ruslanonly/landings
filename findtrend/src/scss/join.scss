@@ -1,0 +1,54 @@
+@use "./variables" as v;
+
+#join-section {
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 1rem;
+        background-color: v.$volt-green;
+    }
+
+    .center {
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: center;
+        row-gap: 2rem;
+        .title {
+
+            h1 {
+                white-space: normal;
+                font-size: 4rem;
+                font-weight: bold;
+                text-align: center;
+            }
+    
+            .secondary {
+                opacity: 0.2;
+            }
+        }
+        .join-button {
+            text-align: center;
+            background: black;
+            color: white;
+            font-weight: 900;
+            padding: 1rem 3rem;
+            border-radius: 2.3rem;
+        }
+    }
+}
+
+@media all and (max-width: 750px) {
+    #join-section {
+        & {
+            padding: 5rem 1rem;
+        }
+        .center {
+            .title {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

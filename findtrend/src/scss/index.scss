@@ -1,0 +1,27 @@
+@use "./hero.scss";
+@use "./open-new-tab.scss";
+@use "./description.scss";
+@use "./brands.scss";
+@use "./platforms.scss";
+@use "./offers.scss";
+@use "./join.scss";
+@use "./footer.scss";
+@use "./modal.scss";
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    transition: all .25s ease;
+    white-space: nowrap;
+}
+
+html {
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}

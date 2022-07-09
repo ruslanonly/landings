@@ -1,0 +1,37 @@
+#description-section {
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 1.5rem;
+    }
+
+    .content {
+        & {
+            max-width: 900px;
+        }
+
+        span {
+            white-space: normal;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        .secondary {
+            color: #ADADAD;
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+    #description-section {
+        & {
+            padding: 5rem 1.5rem;
+        }
+        .content {
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}

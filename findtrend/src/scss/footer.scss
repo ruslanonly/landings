@@ -1,0 +1,52 @@
+#footer-section {
+    .footer-bar {
+        & {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+        }
+
+        .logo-wrapper {
+            display: grid;
+            align-items: center;
+            grid-template-columns: min-content 1fr;
+            column-gap: .9rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+            .logo {
+                width: 3rem;
+                height: 3rem;
+                background: url(../../dist/img/blacklogo.svg) no-repeat center;
+            }
+        }
+
+        .links {
+            & {
+                display: grid;
+                grid-auto-flow: column;
+                align-items: center;
+                gap: 3rem;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #footer-section {
+        .footer-bar {
+            grid-auto-flow: row;
+            padding: 5rem 0;
+            justify-content: center;
+            row-gap: 5rem;
+            .links {
+                grid-auto-flow: row;
+                justify-items: center;
+            }
+        }
+    }
+    
+}
