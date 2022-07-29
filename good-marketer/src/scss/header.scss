@@ -1,0 +1,32 @@
+header {
+  & {
+    padding: 1.2rem 1rem;
+    background-color: #1D2B47;
+  }
+  .header-wrapper {
+    & {
+      display: flex;
+      justify-content: space-between;
+    }
+    nav {
+      & {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .links {
+        display: flex;
+        gap: 1.5rem;
+        a {
+          font-weight: bold;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      .book-button {
+        color: #fff;
+        background-color: #FF6E5B;
+      }
+    }
+  }
+}

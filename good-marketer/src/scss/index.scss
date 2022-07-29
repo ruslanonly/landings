@@ -1,0 +1,17 @@
+@import "../scss/header.scss";
+@import "../scss/intro.scss";
+@import "../scss//common.scss";
+@import "../scss/get-starter.scss";
+@import "../scss/worked-with.scss";
+@import "../scss/digit-market.scss";
+
+html, body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
