@@ -1,0 +1,85 @@
+section.worked-with {
+  & {
+    padding: 5rem 1rem;
+    background-color: #FEF9F7;
+  }
+
+  .worked-with-wrapper {
+    & {
+      display: grid;
+      align-items: center;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .info {
+      & {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 2rem;
+        height: min-content;
+      }
+      .title {
+        span {
+          font-weight: bold;
+          font-size: 2.5rem;
+        }
+        .badge {
+          margin-bottom: 1rem;
+          color: #FF6E5B;
+          font-size: .9rem;
+          font-weight: bold;
+        }
+      }
+      .text {
+        line-height: 1.7rem;
+      }
+      .buttons {
+        display: flex;
+        gap: 1rem;
+        div {
+          width: fit-content;
+          height: fit-content;
+        }
+        .learn-button {
+          color: #fff;
+          background-color: #1D2B47;
+          filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.3));
+        }
+        .book-button {
+          color: #1D2B47;
+          border: 1px solid #1D2B47;
+        }
+      }
+    }
+    .companies {
+      & {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+      }
+      .comp-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 950px) {
+  section.worked-with {
+    & {
+      padding: 3rem 1rem;
+    }
+    .worked-with-wrapper {
+      & {
+        grid-template-columns: none;
+        grid-template-rows: min-content min-content;
+      }
+    }
+  }
+}
